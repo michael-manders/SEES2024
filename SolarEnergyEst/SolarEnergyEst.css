@@ -1,0 +1,21 @@
+body {
+    display: flex;
+    flex-direction: row;
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+#inputs {
+    width: 30%;
+    height: 100%;
+    background-color: rgb(211, 213, 223);
+}
+
+#outputs {
+    width: 70%;
+    height: 100%;
+    background-color: rgb(204, 207, 243);
+}

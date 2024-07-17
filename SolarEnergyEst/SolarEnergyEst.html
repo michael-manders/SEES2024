@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Solar Energy Estimator</title>
+        <link rel="stylesheet" href="SolarEnergyEst.css" />
+        <script src="SolarEnergyEst.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+    </head>
+    <body>
+        <div id="inputs">
+            <div id="input-container">
+                <p>Enter the longitude and latitude for the location</p>
+                <input type="text" id="latitude" placeholder="Latitude" />
+                <input type="text" id="longitude" placeholder="Longitude" />
+                <button
+                    id="submit"
+                    onclick="getData(document.getElementById('latitude').value, document.getElementById('longitude').value)">
+                    Calculate
+                </button>
+            </div>
+        </div>
+        <div id="outputs">
+            <div id="output-container">
+                <p>Results</p>
+                <p id="results"></p>
+            </div>
+            <canvas id="chart" style="width: 100%; max-width: 1000px"></canvas>
+        </div>
+    </body>
+</html>
